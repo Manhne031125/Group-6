@@ -194,11 +194,11 @@ n1 = int(input("Enter total no of elements of student who play badminton: "))
 
 create_set(badminton, n1)
 
-cricket = []
+tennis = []
 
-n2 = int(input("Enter total no of elements of student who play criket: "))
+n2 = int(input("Enter total no of elements of student who play tennis: "))
 
-create_set(cricket, n2)
+create_set(tennis, n2)
 
 football = []
 
@@ -210,29 +210,29 @@ create_set(football, n3)
 
 
 
-print(f"List of students who play both criket and badminton,\n{cricket} intersection {badminton} is: ",intersection(cricket, badminton))
+print(f"List of students who play both tennis and badminton,\n{tennis} intersection {badminton} is: ",intersection(tennis, badminton))
 
 
 
-print(f"List of students who play either cricket or badminton but not both\n{cricket} union {badminton} is: ",myUnion(cricket, badminton))
+print(f"List of students who play either tennis or badminton but not both\n{tennis} union {badminton} is: ",myUnion(tennis, badminton))
 
 
 
-unionCriBad = myUnion(cricket, badminton)
+unionCriBad = myUnion(tennis, badminton)
 
-print(f"list of students who play neither cricket nor badminton,\n{listOfAllStudent}-({cricket} union {badminton}) is: ", listSub(listOfAllStudent, unionCriBad))
-
-
-
-print("Number of students who play neither cricket nor badminton is: ", len(listSub(listOfAllStudent, unionCriBad)))
+print(f"list of students who play neither tennis nor badminton,\n{listOfAllStudent}-({tennis} union {badminton}) is: ", listSub(listOfAllStudent, unionCriBad))
 
 
 
-print(f"List of students who play both criket and football,\n{cricket} intersection {football} is: ",intersection(cricket, football))
+print("Number of students who play neither tennis nor badminton is: ", len(listSub(listOfAllStudent, unionCriBad)))
 
 
 
-print(f"Number of students who play both criket and football but nor badminton is: ", len(intersection(cricket, football)))
+print(f"List of students who play both tennis and football,\n{tennis} intersection {football} is: ",intersection(tennis, football))
+
+
+
+print(f"Number of students who play both tennis and football but nor badminton is: ", len(intersection(tennis, football)))
 
 
 
